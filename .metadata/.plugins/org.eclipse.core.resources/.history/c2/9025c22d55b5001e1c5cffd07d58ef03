@@ -1,0 +1,43 @@
+package com.example5.SpringBoot.Controller;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example5.SpringBoot.Entities.Bike;
+
+@RestController
+@RequestMapping("Bike")
+public class BikeController {
+
+	Bike bike;
+
+	@PostMapping
+	public String createBike(Bike bike) {
+		this.bike = bike;
+		return "Bike object is created";
+	}
+
+//	@GetMapping
+//	public Bike fetchBike()
+//	{
+//		
+//	}
+//	
+//	@PutMapping
+//	public String updateBike()
+//	{
+//		
+//	}
+//	
+//	@DeleteMapping
+//	public String deleteBike()
+//	{
+//		
+//	}
+//	
+
+}

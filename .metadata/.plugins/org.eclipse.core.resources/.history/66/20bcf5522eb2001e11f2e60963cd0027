@@ -1,0 +1,5 @@
+package com.example4.SpringBoot.Entities;
+
+public class Laptop {
+
+}

@@ -1,0 +1,19 @@
+package com.example6.SpringBoot.Services;
+
+import java.util.List;
+
+import com.example6.SpringBoot.Entities.Employee;
+
+public interface EmployeeService {
+	
+	String addEmp();
+	
+	Employee getEmpInfo();
+	
+	List<Employee> getAllEmpInfo();
+	
+	String updateEmp();
+	
+	String deleteEmp();
+
+}

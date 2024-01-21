@@ -1,0 +1,18 @@
+package com.example2.SpringBoot.Controller;
+
+public class StudentController {
+	
+	
+	public String Create()
+	{
+		return "Student Object is created";
+	}
+	
+	
+	public String Fetch()
+	{
+		return "Student Object is Fetched.";
+	}
+
+
+}

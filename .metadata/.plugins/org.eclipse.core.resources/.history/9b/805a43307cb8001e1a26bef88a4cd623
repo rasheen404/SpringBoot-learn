@@ -1,0 +1,18 @@
+package com.example6.SpringBoot.Services;
+
+import com.example6.SpringBoot.Repository.EmployeeRepository;
+
+public class EmployeeServiceImplementation implements EmployeeService{
+	
+	EmployeeRepository employeeRepository;
+
+	public EmployeeServiceImplementation(EmployeeRepository employeeRepository) {
+		super();
+		this.employeeRepository = employeeRepository;
+	}
+	
+	
+	
+	
+
+}

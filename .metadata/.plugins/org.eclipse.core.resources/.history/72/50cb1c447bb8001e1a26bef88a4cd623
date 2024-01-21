@@ -1,0 +1,5 @@
+package com.example6.SpringBoot.Services;
+
+public interface EmployeeService {
+
+}

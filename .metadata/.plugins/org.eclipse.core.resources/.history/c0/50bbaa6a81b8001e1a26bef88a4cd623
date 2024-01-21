@@ -1,0 +1,50 @@
+package com.example6.SpringBoot.Services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example6.SpringBoot.Entities.Employee;
+import com.example6.SpringBoot.Repository.EmployeeRepository;
+
+@Service
+public class EmployeeServiceImplementation implements EmployeeService {
+
+	EmployeeRepository employeeRepository;
+
+	public EmployeeServiceImplementation(EmployeeRepository employeeRepository) {
+		super();
+		this.employeeRepository = employeeRepository;
+	}
+
+	@Override
+	public String addEmp(Employee e) {
+		employeeRepository.save(e);
+		return "Employee Object is created and saved.";
+	}
+
+	@Override
+	public Employee getEmpInfo(String emp_id) {
+		Employee e = employeeRepository.findById(emp_id).get();
+		return null;
+	}
+
+	@Override
+	public List<Employee> getAllEmpInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateEmp(Employee e) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteEmp(String emp_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

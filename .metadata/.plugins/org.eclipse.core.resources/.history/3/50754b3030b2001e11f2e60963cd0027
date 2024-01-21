@@ -1,0 +1,26 @@
+package com.example4.SpringBoot.LaptopController;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example4.SpringBoot.Entities.Laptop;
+
+@RestController
+@RequestMapping("Laptop")
+public class LaptopController {
+	
+	
+	@GetMapping("{srNo}")
+	public String getLap()
+	{
+		return "Laptop object is created.";
+	}
+	/*
+	 * public Laptop read() { return "Laptop object is created"; }
+	 * 
+	 * public String update() { return "Laptop object is updated."; }
+	 * 
+	 * public String delete() { return "Laptop object is deleted."; }
+	 */
+}

@@ -1,0 +1,5 @@
+package com.example5.SpringBoot.Entities;
+
+public class Bike {
+
+}

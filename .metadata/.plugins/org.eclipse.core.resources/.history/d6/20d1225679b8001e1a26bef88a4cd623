@@ -1,0 +1,5 @@
+package com.example6.SpringBoot.Repository;
+
+public interface EmployeeRepository {
+
+}
