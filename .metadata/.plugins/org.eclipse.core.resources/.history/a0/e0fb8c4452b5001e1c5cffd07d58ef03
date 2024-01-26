@@ -1,6 +1,0 @@
-package com.example5.SpringBoot.Services;
-
-public interface BikeService {
-
-	public String createBike();
-}
